@@ -1,0 +1,42 @@
+                                           Program to add two numbers without using addition operator
+ 
+ #include <stdio.h>
+int add(int x, int y)
+{
+	return printf("%*c%*c", x, ' ', y, ' ');
+}
+int main()
+{
+	printf("Sum = %d", add(3, 4));
+	return 0;
+}
+
+
+
+                                        program to subtract two numbers without using subtraction operator 
+                                      program to multiply two numbers without using multiplication operator 
+                                            program to divide two numbers without using division operator 
+
+                                                program to print number from 1 to 100 without using loop
+#include<stdio.h>
+int main()
+{
+    static int i=1;
+    if(i<=100)
+    {
+    printf("%d ",i++);
+    main();
+}
+}
+
+                                                          program to print anything without using main
+#include<stdio.h>
+#define x main
+void x()
+{
+    printf("hello world");
+}
+
+
+
+                                                    program to print 
