@@ -14,7 +14,25 @@ int main()
 
 
                                         program to subtract two numbers without using subtraction operator 
-                                      program to multiply two numbers without using multiplication operator 
+                                      program to multiply two numbers without using multiplication operator
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    int mul=0; 
+    printf("enter the two numbers\n");
+    scanf("%d%d",&a,&b);
+    while(b)
+    {
+        mul=mul+a;
+        b--;
+    }
+    printf("mul=%d",mul);
+    return 0;
+}
+				      
+				      
+				  
                                             program to divide two numbers without using division operator 
 
                                                 program to print number from 1 to 100 without using loop
@@ -39,4 +57,34 @@ void x()
 
 
 
-                                                    program to print 
+                                                    program to sort the left side of array list till the last
+
+
+#include <stdio.h>
+void main()
+{
+    int a[10];
+    int n=10;
+    int t,i,j;
+    printf("enetr the array\n");
+    for(i=0;i<n;i++)
+    scanf("%d ",&a[i]);
+    printf("array before sorting\n");
+    for(i=0;i<n;i++)
+    printf("%d ",a[i]);
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n/2;j++)
+        if(a[i]>a[j]){
+            t=a[i];
+            a[i]=a[j];
+            a[j]=t;
+        }
+    }
+    printf("array after sorting\n");
+    for(i=0;i<n;i++)
+    printf("%d ",a[i]);
+    return 0;
+    
+    
+}
